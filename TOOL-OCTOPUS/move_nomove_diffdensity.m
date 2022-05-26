@@ -1,0 +1,12 @@
+clear all;
+path1='D:\data\complex oxide\SrFeO2\0.2\xnomove200meV\output_iter\Tdensity0026000_0050\total_density-sp1.txt';
+path2='D:\data\complex oxide\SrFeO2\0.2\xnomove200meV\output_iter\Tdensity0026000_0050\total_density-sp2.txt';
+data1=dlmread(path1,'');
+data2=dlmread(path2,'');
+dataa=data1-data2;
+path3='D:\data\complex oxide\SrFeO2\0.2\200meVx2\output_iter\Tdensity0026000_0050\total_density-sp1.txt';
+path4='D:\data\complex oxide\SrFeO2\0.2\200meVx2\output_iter\Tdensity0026000_0050\total_density-sp2.txt';
+data3=dlmread(path3,'');
+data4=dlmread(path4,'');
+datab=data3-data4;
+data_fin=datab-dataa;
